@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Stock - Blood Bank Management System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Blood Bank Management System</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="donor_registration.html">Donor Registration</a></li>
+                    <li><a href="recipient_registration.html">Recipient Registration</a></li>
+                    <li><a href="blood_stock.html" class="active">Blood Stock</a></li>
+                    <li><a href="blood_request.html">Request Blood</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <section class="blood-stock-section">
+                <h2>Current Blood Stock</h2>
+                <div id="bloodStockContainer">
+                    <table class="stock-table">
+                        <thead>
+                            <tr>
+                                <th>Blood Group</th>
+                                <th>Units Available</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="bloodStockTableBody">
+                            <!-- Data will be loaded dynamically using JavaScript -->
+                            <tr>
+                                <td colspan="3">Loading blood stock data...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="stock-info">
+                    <h3>Blood Stock Status</h3>
+                    <div class="status-indicators">
+                        <div class="status-item">
+                            <span class="status-dot critical"></span>
+                            <span>Critical (Less than 5 units)</span>
+                        </div>
+                        <div class="status-item">
+                            <span class="status-dot low"></span>
+                            <span>Low (5-10 units)</span>
+                        </div>
+                        <div class="status-item">
+                            <span class="status-dot normal"></span>
+                            <span>Normal (More than 10 units)</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <p>&copy; 2025 Blood Bank Management System. All rights reserved.</p>
+        </footer>
+    </div>
+    
+    <script src="js/blood_stock.js"></script>
+</body>
+</html>

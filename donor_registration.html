@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donor Registration - Blood Bank Management System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Blood Bank Management System</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="donor_registration.html" class="active">Donor Registration</a></li>
+                    <li><a href="recipient_registration.html">Recipient Registration</a></li>
+                    <li><a href="blood_stock.html">Blood Stock</a></li>
+                    <li><a href="blood_request.html">Request Blood</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <section class="form-section">
+                <h2>Donor Registration</h2>
+                <form id="donorForm" action="php/register_donor.php" method="POST">
+                    <div class="form-group">
+                        <label for="firstName">First Name:</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="gender">Gender:</label>
+                        <select id="gender" name="gender" required>
+                            <option value="">Select Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="bloodGroup">Blood Group:</label>
+                        <select id="bloodGroup" name="bloodGroup" required>
+                            <option value="">Select Blood Group</option>
+                            <option value="1">A+</option>
+                            <option value="2">A-</option>
+                            <option value="3">B+</option>
+                            <option value="4">B-</option>
+                            <option value="5">AB+</option>
+                            <option value="6">AB-</option>
+                            <option value="7">O+</option>
+                            <option value="8">O-</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contact">Contact Number:</label>
+                        <input type="tel" id="contact" name="contact" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="address">Address:</label>
+                        <textarea id="address" name="address" required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="city">City:</label>
+                        <input type="text" id="city" name="city" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="state">State:</label>
+                        <input type="text" id="state" name="state" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="lastDonation">Last Donation Date (if any):</label>
+                        <input type="date" id="lastDonation" name="lastDonation">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="medicalHistory">Medical History:</label>
+                        <textarea id="medicalHistory" name="medicalHistory"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Register</button>
+                        <button type="reset" class="btn btn-secondary">Reset</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+        
+        <footer>
+            <p>&copy; 2025 Blood Bank Management System. All rights reserved.</p>
+        </footer>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

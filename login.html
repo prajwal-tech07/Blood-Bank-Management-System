@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Blood Bank Management System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Blood Bank Management System</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="donor_registration.html">Donor Registration</a></li>
+                    <li><a href="recipient_registration.html">Recipient Registration</a></li>
+                    <li><a href="blood_stock.html">Blood Stock</a></li>
+                    <li><a href="blood_request.html">Request Blood</a></li>
+                    <li><a href="login.html" class="active">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <section class="login-section">
+                <h2>Login</h2>
+                <form id="loginForm" action="php/login.php" method="POST">
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+        
+        <footer>
+            <p>&copy; 2025 Blood Bank Management System. All rights reserved.</p>
+        </footer>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

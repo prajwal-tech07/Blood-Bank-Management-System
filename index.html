@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Bank Management System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Blood Bank Management System</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="donor_registration.html">Donor Registration</a></li>
+                    <li><a href="recipient_registration.html">Recipient Registration</a></li>
+                    <li><a href="blood_stock.html">Blood Stock</a></li>
+                    <li><a href="blood_request.html">Request Blood</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <section class="hero">
+                <h2>Welcome to Blood Bank Management System</h2>
+                <p>Donate blood, save lives. Your donation can make a difference.</p>
+                <div class="cta-buttons">
+                    <a href="donor_registration.html" class="btn btn-primary">Become a Donor</a>
+                    <a href="blood_request.html" class="btn btn-secondary">Request Blood</a>
+                </div>
+            </section>
+            
+            <section class="features">
+                <div class="feature-card">
+                    <h3>Blood Donation</h3>
+                    <p>Register as a donor and help save lives by donating blood regularly.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Blood Request</h3>
+                    <p>Need blood? Submit a request and we'll help you find compatible donors.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Blood Stock</h3>
+                    <p>Check our current blood stock availability for different blood groups.</p>
+                </div>
+            </section>
+            
+            <section class="blood-groups">
+                <h2>Blood Group Compatibility</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Blood Group</th>
+                            <th>Can Donate To</th>
+                            <th>Can Receive From</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>A+</td>
+                            <td>A+, AB+</td>
+                            <td>A+, A-, O+, O-</td>
+                        </tr>
+                        <tr>
+                            <td>A-</td>
+                            <td>A+, A-, AB+, AB-</td>
+                            <td>A-, O-</td>
+                        </tr>
+                        <tr>
+                            <td>B+</td>
+                            <td>B+, AB+</td>
+                            <td>B+, B-, O+, O-</td>
+                        </tr>
+                        <tr>
+                            <td>B-</td>
+                            <td>B+, B-, AB+, AB-</td>
+                            <td>B-, O-</td>
+                        </tr>
+                        <tr>
+                            <td>AB+</td>
+                            <td>AB+</td>
+                            <td>All Groups</td>
+                        </tr>
+                        <tr>
+                            <td>AB-</td>
+                            <td>AB+, AB-</td>
+                            <td>A-, B-, AB-, O-</td>
+                        </tr>
+                        <tr>
+                            <td>O+</td>
+                            <td>A+, B+, AB+, O+</td>
+                            <td>O+, O-</td>
+                        </tr>
+                        <tr>
+                            <td>O-</td>
+                            <td>All Groups</td>
+                            <td>O-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+        
+        <footer>
+            <p>&copy; 2025 Blood Bank Management System. All rights reserved.</p>
+        </footer>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
